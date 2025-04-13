@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(to right, #d16341, #243b55);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn
+{
+background-color: yellow;
+color: purple;
+}
+h1
+{
+    background: rgb(12, 10, 158);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.message {
+    font-weight: bold;
+    color: white;
+    display: none;
+}
