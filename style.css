@@ -11,15 +11,53 @@ body {
 background-color: yellow;
 color: purple;
 }
+.btn:hover
+{
+    background-color: yellow;
+    color: purple;
+}
+.container
+{
+    margin-top: 5%;
+}
 h1
 {
-    background: rgb(12, 10, 158);
-    font-size: 2rem;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 2%;
+    animation: slide 2s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
 }
 .message {
     font-weight: bold;
     color: white;
     display: none;
+}
+.image
+{
+    height: 100%;
+    margin-bottom: 50%;
+}
+img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+@keyframes slide
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-50%);
+    }
+    100%
+    {
+        transform: translateY(50%);
+    }
 }
